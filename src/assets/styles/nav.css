@@ -1,44 +1,44 @@
-.sidepanel {
-    height: 250px;
-    width: 0px;
+#sidepanel {
+    /* height: 250px; */
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     overflow-x: hidden; /* disable horizontal scroll */
-    padding-top: 60px;
+    margin-top: 60px;
     transition: 0.5s;
-    display: none;
 }
 
-.sidepanel li {
+#sidepanel li {
     padding: 8px 8px 8px 32px;
-    font-size: 25px;
+    /* font-size: 25px; */
     color: #818181;
-    /* display: block; */
+    display: block;
     transition: 0.3s;
 }
 
-.sidepanel li:hover {
+#sidepanel li:hover {
     color: #f1f1f1;
 }
 
-.sidepanel .closebtn {
-    position: absolute;
+#sidepanel .closebtn {
+    /* position: absolute; */
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px;
+    margin-left: 100px;
+    color: #818181;
 }
 
 .openbtn {
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     /* color: white; */
-    padding: 10px 15px;
+    padding: 25px 40px;
     border: none;
 }
 
 .openbtn:hover {
-    background-color: #444;
+    color: rgb(55, 211, 55);
 }
