@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
+      {/* <Header /> */}
       <div className="flex flex-col h-screen justify-between">
       <Nav />
       <main className="bg-black mb-auto">

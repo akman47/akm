@@ -1,6 +1,6 @@
 .sidenav img {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
 }
 
 .tab {
@@ -32,13 +32,14 @@
 }
 
 .project-container {
-    display: none;
+    /* display: none; */
     width: 80%;
     height: 55%;
     border: 2px solid #f1f1f1;
+    line-height: 1.5;
 }
 
-.bike, .clonello, .quiz, .weather, .budget, .blog {
+.clonello, .quiz, .weather, .budget, .blog {
     display: none;
 }
 
@@ -106,6 +107,6 @@
     height: 45%;
 }
 
-.link-container imgq:hover {
+.link-container img:hover {
     transform: scale(1.2);
 }

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Contact from '../../pages/Contact';
+// import Contact from '../../pages/Contact';
 import phoneIcon from '../../assets/icons/phone-white.png';
 import emailIcon from '../../assets/icons/email2.png';
-import resumeIcon from '../../assets/icons/resume3.png';
+// import resumeIcon from '../../assets/icons/resume3.png';
 
 import '../../assets/styles/nav.css';
 
@@ -23,9 +23,9 @@ function Nav(){
     }
 
     return (
-        <>
+        <header className='flex justify-between'>
+        <h2>Angela Man</h2>
         <ul id="sidepanel" className="sidepanel bg-black h-full text-xl text-center font-medium my-7">
-        {/* text-xl px-8 font-medium my-5 px-8 w-1/3 */}
             <li className="mt-6 py-3" onClick={toggleMenu}>
                 <NavLink exact to='/'
                     activeClassName="text-green-300"
@@ -57,26 +57,22 @@ function Nav(){
                     replace>Contact
                 </NavLink>
                 {/* <Contact /> */}
-                <section className="dropdown-content flex flex-row bg-black py-4 w-full text-xs">
-            <a className="text-sm" href="tel:+12813006033">
-                <img className="contact-img mx-3" src={phoneIcon} alt="phone icon"/>
-                {/* <span className="">281.300.6033</span> */}
-            </a>
-            <a className="text-sm" href="mailto:angela.k.man@gmail.com">
-                <img className="contact-img mx-3" src={emailIcon} alt="email icon" />
-                {/* <span>angela.k.man@gmail.com</span> */}
-            </a>
-            {/* <a className="text-sm" href="https://drive.google.com/file/d/1ig66QVZOr92mOo0-YWz1qse_Eh5UgeaH/view?usp=sharing" target="_blank" rel="noreferrer"> */}
-                {/* <img className="contact-img mx-3" src={resumeIcon} alt="resume icon" /> */}
-                {/* <span>Resume</span> */}
-            {/* </a> */}
-        </section>
+                <div className="dropdown-content flex flex-row bg-black py-4 w-full text-xs">
+                    <a className="text-sm pb-2" href="tel:+12813006033">
+                        <img className="contact-img mx-3" src={phoneIcon} alt="phone icon"/>
+                        {/* <span className="">281.300.6033</span> */}
+                    </a>
+                    <a className="text-sm py-1" href="mailto:angela.k.man@gmail.com">
+                        <img className="contact-img mx-3" src={emailIcon} alt="email icon" />
+                        {/* <span>angela.k.man@gmail.com</span> */}
+                    </a>
+                </div>
             </li>
         </ul>
         <div className="text-right pt-7">
             <span className="openbtn" onClick={toggleMenu}>&#9776;</span>
         </div>
-        </>
+        </header>
     )
 }
 

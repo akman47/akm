@@ -42,7 +42,7 @@
     color: rgb(55, 211, 55);
 }
 
-.openbtn:hover .sidepanel {
+.openbtn:hover #sidepanel {
     width: 180px;
 }
 
@@ -84,7 +84,7 @@
   
 .dropdown-content a:hover img {
     font-weight: bold;
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
   
 .dropdown:hover .dropdown-content {
@@ -95,6 +95,6 @@
 }
 
 .contact-img {
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
 }

@@ -3,8 +3,7 @@ import { validateEmail } from '../../utils/helpers';
 import phoneIcon from '../../assets/icons/phone-white.png';
 import emailIcon from '../../assets/icons/email2.png';
 import resumeIcon from '../../assets/icons/resume3.png';
-
-import '../../assets/styles/contact.css';
+import emailjs from 'emailjs-com';
 
 function Contact() {
     const [formState, setFormState] = useState({name:'', email:'', message:''});
@@ -43,6 +42,14 @@ function Contact() {
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
+
+        emailjs.sendForm('service_j7tzqqs', 'template_tu05euo', e.target, 'user_7QKKGJifLAnnXb3dy14nn')
+            .then(result => {
+                console.log('success!', result.text);
+            }, error => {
+                console.log('failed!', error.text);
+            });
+
         setFormState({
             name: '',
             email: '',
@@ -53,8 +60,8 @@ function Contact() {
     return (
         <section className="bg-black py-5 w-full flex flex-col items-center">
             <div className='pb-8'>
-                <span className='font-medium text-xl ml-10'>Contact Me</span>
-                <a className="text-sm flex justify-start items-center py-3 pt-4" href="tel:+12813006033">
+                <span className='font-medium text-2xl ml-10'>Let's Connect!</span>
+                <a className="text-sm flex justify-start items-center py-3 pt-6" href="tel:+12813006033">
                     <img className="contact-img mx-3" src={phoneIcon} alt="phone icon"/>
                     <span className="">281.300.6033</span>
                 </a>
@@ -69,25 +76,17 @@ function Contact() {
             </div>
             
             <form className="items-center flex flex-col w-full py-5" onSubmit={handleSubmit}>
-            <h4 className='font-medium text-xl'>Leave a message</h4>
-                <input type="text" name="name" placeholder="Name" className="mt-3 border-2 p-2 rounded w-1/3" defaultValue={name} onBlur={handleChange} />
-                <input type="text" name="email" placeholder="Email" className="mt-3 border-2 p-2 rounded w-1/3" defaultValue={email} onBlur={handleChange} />
-                <textarea name="message" rows="5" placeholder="Message" className="mt-3 border-2 p-2 rounded w-1/3" defaultValue={message} onBlur={handleChange} />
-            {/* {errorMessage && (
-                <div className='text-red-600'>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
-            )} */}
-            <button className="mt-4 border-2 rounded-xl px-3 py-1 hover:bg-gray-100 hover:text-black" type="submit">Submit</button>
-        </form>
-        {/* <div className="contact-info">
-            <h4>Contact Information</h4>
-            <div>
-                Phone: <a href="tel:+19176987037">917-698-7037</a><br />
-                Email: <a href="mailto:joseph@gmail.com">joseph@gmail.com</a><br />
-                Location: Houston, TX USA
-            </div>
-        </div>   */}
+                <h4 className='font-medium text-l'>Leave a message</h4>
+                <input type="text" name="name" placeholder="Name" className="mt-3 border-2 p-2 rounded w-1/3 text-black" defaultValue={name} onBlur={handleChange} />
+                <input type="text" name="email" placeholder="Email" className="mt-3 border-2 p-2 rounded w-1/3 text-black" defaultValue={email} onBlur={handleChange} />
+                <textarea name="message" rows="5" placeholder="Message" className="mt-3 border-2 p-2 rounded w-1/3 text-black" defaultValue={message} onBlur={handleChange} />
+                {errorMessage && (
+                    <div className='text-red-600 py-2'>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
+                )}
+                <button className="mt-4 border-2 rounded-xl px-3 py-1 hover:bg-gray-100 hover:text-black" type="submit">Submit</button>
+            </form>
         </section>
 
     )

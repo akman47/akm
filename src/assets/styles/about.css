@@ -1,0 +1,31 @@
+.bio-img,
+.podium-img,
+.developer-img  {
+    width: 300px;
+    height: 300px;
+}
+
+.bio-panel,
+.athlete-panel,
+.developer-panel {
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.3s;
+    height: 50%;
+}
+
+.bio-box:hover .bio-img,
+.athlete-box:hover .podium-img,
+.developer-box:hover .developer-img {
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.bio-box:hover .bio-panel,
+.athlete-box:hover .athlete-panel,
+.developer-box:hover .developer-panel {
+    color: white;
+    transform: translateY(-50%);
+}

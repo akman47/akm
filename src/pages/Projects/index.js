@@ -8,12 +8,13 @@ import quizImg from '../../assets/images/code-quiz.png';
 // import happyMealsImg from '../../assets/images/happy-meals.png';
 import budgetImg from '../../assets/images/budget-tracker.png';
 import bikeSleuthImg from '../../assets/images/BikeSleuth-search.png';
-import bikeIcon from '../../assets/icons/bike-icon.png';
-import blogIcon from '../../assets/icons/blog-icon.jpeg';
-import budgetIcon from '../../assets/icons/budget-icon.jpeg';
+import bikeIcon from '../../assets/icons/bike-icon-color.jpeg';
+import blogIcon from '../../assets/icons/blog-icon-color.jpeg';
+import budgetIcon from '../../assets/icons/budget-icon-color.png';
 import codeIcon from '../../assets/icons/code-icon.png';
-import weatherIcon from '../../assets/icons/weather-icon.png';
+import weatherIcon from '../../assets/icons/weather-icon-color.png';
 import taskIcon from '../../assets/icons/task-icon.png';
+import clockIcon from '../../assets/icons/clock.jpg';
 
 import '../../assets/styles/projects.css';
 
@@ -92,8 +93,6 @@ function Projects() {
     }
 
     function showBike() {
-        document.querySelector('.project-intro').style.display = 'none';
-        document.querySelector('.project-container').style.display = 'block';
         document.querySelector('.bike').style.display = 'block';
         document.querySelector('.clonello').style.display = 'none';
         document.querySelector('.blog').style.display = 'none';
@@ -103,8 +102,6 @@ function Projects() {
     }
 
     function showClonello() {
-        document.querySelector('.project-intro').style.display = 'none';
-        document.querySelector('.project-container').style.display = 'block';
         document.querySelector('.bike').style.display = 'none';
         document.querySelector('.clonello').style.display = 'block';
         document.querySelector('.blog').style.display = 'none';
@@ -114,8 +111,6 @@ function Projects() {
     }
 
     function showBlog() {
-        document.querySelector('.project-intro').style.display = 'none';
-        document.querySelector('.project-container').style.display = 'block';
         document.querySelector('.bike').style.display = 'none';
         document.querySelector('.clonello').style.display = 'none';
         document.querySelector('.blog').style.display = 'block';
@@ -125,8 +120,6 @@ function Projects() {
     }
 
     function showQuiz() {
-        document.querySelector('.project-intro').style.display = 'none';
-        document.querySelector('.project-container').style.display = 'block';
         document.querySelector('.bike').style.display = 'none';
         document.querySelector('.clonello').style.display = 'none';
         document.querySelector('.blog').style.display = 'none';
@@ -136,8 +129,6 @@ function Projects() {
     }
 
     function showWeather() {
-        document.querySelector('.project-intro').style.display = 'none';
-        document.querySelector('.project-container').style.display = 'block';
         document.querySelector('.bike').style.display = 'none';
         document.querySelector('.clonello').style.display = 'none';
         document.querySelector('.blog').style.display = 'none';
@@ -147,8 +138,6 @@ function Projects() {
     }
 
     function showBudget() {
-        document.querySelector('.project-intro').style.display = 'none';
-        document.querySelector('.project-container').style.display = 'block';
         document.querySelector('.bike').style.display = 'none';
         document.querySelector('.clonello').style.display = 'none';
         document.querySelector('.blog').style.display = 'none';
@@ -161,25 +150,25 @@ function Projects() {
         <section>
             {/* <h2 className='text-center text-3xl font-medium mb-5'>Projects</h2> */}
             <div className='flex flex-col sidenav'>
-                <div className='tab bike-tab bg-white text-black flex flex-row'><span className='px-6' onClick={showBike}>Bike Sleuth</span><img src={bikeIcon} alt='bike' /></div>
-                <div className='tab clonello-tab bg-white text-black flex flex-row'><span className='px-6' onClick={showClonello}>Clonello</span><img src={taskIcon} alt='task icon' /></div>
-                <div className='tab blog-tab bg-white flex text-black flex-row'><span className='px-6' onClick={showBlog}>Tech Blog</span><img src={blogIcon} alt='blog icon' /></div>
-                <div className='tab quiz-tab bg-white flex text-black flex-row'><span className='px-6' onClick={showQuiz}>Code Quiz</span><img src={codeIcon} alt='coding quiz' /></div>
-                <div className='tab weather-tab bg-white flex text-black flex-row'><span className='px-6' onClick={showWeather}>Weather Dashboard</span><img src={weatherIcon} alt='weather' /></div>
-                <div className='tab budget-tab bg-white flex text-black flex-row'><span className='px-6' onClick={showBudget}>Budget Tracker</span><img src={budgetIcon} alt='budget' /></div>
+                <div className='tab bike-tab bg-white text-black flex flex-row' onClick={showBike}><span className='px-6'>Bike Sleuth</span><img src={bikeIcon} alt='bike' /></div>
+                <div className='tab clonello-tab bg-white text-black flex flex-row' onClick={showClonello}><span className='px-6'>Clonello</span><img src={taskIcon} alt='task icon' /></div>
+                <div className='tab blog-tab bg-white flex text-black flex-row' onClick={showBlog}><span className='px-6'>Tech Blog</span><img src={blogIcon} alt='blog icon' /></div>
+                <div className='tab quiz-tab bg-white flex text-black flex-row' onClick={showQuiz}><span className='px-6'>Code Quiz</span><img src={codeIcon} alt='coding quiz' /></div>
+                <div className='tab weather-tab bg-white flex text-black flex-row' onClick={showWeather}><span className='px-6'>Weather Dashboard</span><img src={weatherIcon} alt='weather' /></div>
+                <div className='tab budget-tab bg-white flex text-black flex-row' onClick={showBudget}><span className='px-6'>Budget Tracker</span><img src={budgetIcon} alt='budget' /></div>
             </div>
             <div className='sidenav flex flex-col'>
-                <div className='right-tab a-tab bg-white text-black flex flex-row'><img src={bikeIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
-                <div className='right-tab b-tab bg-white text-black flex flex-row'><img src={bikeIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
-                <div className='right-tab c-tab bg-white flex text-black flex-row'><img src={bikeIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
-                <div className='right-tab d-tab bg-white flex text-black flex-row'><img src={bikeIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
-                <div className='right-tab e-tab bg-white flex text-black flex-row'><img src={bikeIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
-                <div className='right-tab f-tab bg-white flex text-black flex-row'><img src={bikeIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
+                <div className='right-tab a-tab bg-white text-black flex flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
+                <div className='right-tab b-tab bg-white text-black flex flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
+                <div className='right-tab c-tab bg-white flex text-black flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
+                <div className='right-tab d-tab bg-white flex text-black flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
+                <div className='right-tab e-tab bg-white flex text-black flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
+                <div className='right-tab f-tab bg-white flex text-black flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
             </div>
             
-            <span className='project-intro'>Click the project tabs to check them out</span>
 
-            <div className='project-container ml-28 text-center w-10/12 rounded-xl p-3'>
+            <div className=' project-container ml-28 text-center rounded-xl w-10/12 pt-3'>
+                {/* <span className='project-intro pt-32'>Explore the tabs to view more details about each project</span> */}
             {work.map(project => (
                 <article key={project.title} className={`${project.key}`} >
                     <div className='flex flex-row justify-between py-3 mx-3 p-5'>
@@ -190,7 +179,8 @@ function Projects() {
                         </div>
                     </div>
                     <img src={project.snapshot} className='project-image max-h-screen p-4 rounded-xl' />
-                    <span>{project.description}</span>
+                    <span className='m-3'>{project.description}</span><br />
+                    <span className='m-3 pb-3'>Languages: {project.languages}</span>
                 </article>
             ))}
             </div>
