@@ -1,0 +1,111 @@
+.sidenav img {
+    width: 32px;
+    height: 32px;
+}
+
+.tab {
+    position: absolute;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+}
+
+.tab:hover {
+    left: 0;
+    cursor: pointer;
+}
+
+.right-tab {
+    position: absolute;
+    right: -170px;
+    transition: 0.3s;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px 0 0 5px;
+}
+
+.right-tab:hover {
+    right: 0;
+    cursor: pointer;
+}
+
+.project-container {
+    display: none;
+    width: 80%;
+    height: 55%;
+    border: 2px solid #f1f1f1;
+}
+
+.bike, .clonello, .quiz, .weather, .budget, .blog {
+    display: none;
+}
+
+.bike-tab {
+    top: 130px;
+    left: -145px;
+}
+
+.clonello-tab {
+    top: 200px;
+    left: -120px;
+}
+
+.blog-tab {
+    top: 270px;
+    left: -135px;
+}
+
+.quiz-tab {
+    top: 340px;
+    left: -140px;
+}
+
+.weather-tab {
+    top: 410px;
+    left: -225px;
+}
+
+.budget-tab {
+    top: 480px;
+    left: -185px;
+}
+
+.a-tab {
+    top: 130px;
+}
+
+.b-tab {
+    top: 200px;
+}
+
+.c-tab {
+    top: 270px;
+}
+
+.d-tab {
+    top: 340px;
+}
+
+.e-tab {
+    top: 410px;
+}
+
+.f-tab {
+    top: 480px;
+}
+
+.link-container img {
+    width: 32px;
+    height: 32px;
+}
+
+.project-image {
+    width: 100%;
+    height: 45%;
+}
+
+.link-container imgq:hover {
+    transform: scale(1.2);
+}

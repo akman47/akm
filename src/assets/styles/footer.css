@@ -8,11 +8,6 @@ footer {
     align-items: center;
 }
 
-/* footer a {
-    display: flex;
-    justify-content: center;
-} */
-
 footer a:hover {
     /* box-shadow: 0px 0px 5px 0px rgba(256, 256, 256, 0.3); */
     transform: scale(1.2);
