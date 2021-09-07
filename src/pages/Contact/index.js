@@ -46,8 +46,10 @@ function Contact() {
         emailjs.sendForm('service_j7tzqqs', 'template_tu05euo', e.target, 'user_7QKKGJifLAnnXb3dy14nn')
             .then(result => {
                 console.log('success!', result.text);
+                setErrorMessage('Message Sent!');
             }, error => {
                 console.log('failed!', error.text);
+                setErrorMessage('Message failed to send. Please try again.')
             });
 
         setFormState({
