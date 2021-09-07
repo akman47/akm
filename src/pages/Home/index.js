@@ -31,7 +31,7 @@ function Home() {
                     }}
                 >
                 <Typist.Delay ms={120}></Typist.Delay>
-                    <span>Where inspiration lies, creativity follows</span>
+                    <span className='home-text text-4xl'>Where inspiration lies, creativity follows</span>
                 </Typist>
             </span>
         </section>

@@ -1,41 +1,12 @@
-.dropdown {
-    position: relative;
-    display: inline;
-    width: 100%;
-}
-
-.dropdown:hover {
-    cursor: pointer;
-}
-  
-.dropdown-content {
-    display: none;
-    position: relative;
-    /* background-color: rgba(0, 0, 0, 0.4); */
-    /* color: #f1f1f1; */
-    /* min-width: 160px; */
-    /* box-shadow: 0px 8px 16px 0px rgba(173, 236, 225, 0.2); */
-    /* right: 0; */
-    width: 100%;
-    overflow: auto;
-    z-index: 1;
-  }
-  
-.dropdown-content a {
-    padding-bottom: 15px;
-    text-decoration: none;
-  }
-  
-.dropdown-content a:hover img {
-    font-weight: bold;
-    transform: scale(1.4);
-}
-  
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.contact-img {
+/* .contact-img {
     width: 20px;
     height: 20px;
+} */
+
+.contact-headers {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#contact a, #contact input, #contact textarea {
+    font-family: 'Kaisei HarunoUmi', serif;
 }

@@ -7,9 +7,11 @@
     position: absolute;
     left: -100px;
     transition: 0.3s;
-    padding: 15px;
-    font-size: 20px;
+    padding: 12px;
+    font-size: 25px;
+    font-weight: bold;
     border-radius: 0 5px 5px 0;
+    font-family: 'Amatic SC', cursive;
 }
 
 .tab:hover {
@@ -19,11 +21,13 @@
 
 .right-tab {
     position: absolute;
-    right: -170px;
+    right: -145px;
     transition: 0.3s;
-    padding: 15px;
-    font-size: 20px;
+    padding: 12px;
+    font-size: 25px;
+    font-weight: bold;
     border-radius: 5px 0 0 5px;
+    font-family: 'Amatic SC', cursive;
 }
 
 .right-tab:hover {
@@ -41,36 +45,37 @@
 
 .clonello, .quiz, .weather, .budget, .blog {
     display: none;
+    font-family: 'Kaisei HarunoUmi', serif;
 }
 
 .bike-tab {
     top: 130px;
-    left: -145px;
+    left: -132px;
 }
 
 .clonello-tab {
     top: 200px;
-    left: -120px;
+    left: -119px;
 }
 
 .blog-tab {
     top: 270px;
-    left: -135px;
+    left: -120px;
 }
 
 .quiz-tab {
     top: 340px;
-    left: -140px;
+    left: -125px;
 }
 
 .weather-tab {
     top: 410px;
-    left: -225px;
+    left: -188px;
 }
 
 .budget-tab {
     top: 480px;
-    left: -185px;
+    left: -160px;
 }
 
 .a-tab {
@@ -79,6 +84,7 @@
 
 .b-tab {
     top: 200px;
+
 }
 
 .c-tab {
@@ -109,4 +115,8 @@
 
 .link-container img:hover {
     transform: scale(1.2);
+}
+
+#projects h2 {
+    font-family: 'Rock Salt', cursive;
 }

@@ -27,7 +27,7 @@ function Projects() {
             repoLink: 'https://github.com/Chrisdocs/FindMyBike',
             languages: 'MERN, JavaScript, Tailwind',
             snapshot: bikeSleuthImg,
-            description: 'Full stack app for storing bike information to aid in searching for lost bikes'
+            description: 'Full stack MERN app for storing bike information to aid in searching for lost bikes'
         },
         {
             key: 'blog',
@@ -36,7 +36,7 @@ function Projects() {
             repoLink: 'https://github.com/akman47/tech-blog',
             languages: 'JavaScript, mySQL, Handlebars, Node',
             snapshot: techBlogImg,
-            description: 'Full stack app for sharing thoughts and articles'
+            description: 'Full stack app utilizing Handlebars.js, Node, mySQL, and JavaScript for sharing thoughts and articles'
         },
         {
             key: 'weather',
@@ -45,7 +45,7 @@ function Projects() {
             repoLink: 'https://github.com/akman47/weather-dashboard',
             languages: 'HTML, CSS, JavaScript, Moment',
             snapshot: weatherDashImg,
-            description: 'Frontend JS app for checking the weather'
+            description: 'Frontend JavaScript app for checking the weather'
         },
         {
             key: 'clonello',
@@ -54,7 +54,7 @@ function Projects() {
             repoLink: 'https://github.com/akman47/Clonello',
             languages: 'JavaScript, mySQL, Handlebars',
             snapshot: clonelloImg,
-            description: 'Full stack app using Handlebars and mySql for creating and tracking tasks for projects'
+            description: 'Full stack app using Handlebars and mySQL for creating and tracking tasks for projects'
         },
         {
             key: 'quiz',
@@ -63,7 +63,7 @@ function Projects() {
             repoLink: 'https://github.com/akman47/code-quiz',
             languages: 'HTML, CSS, JavaScript',
             snapshot: quizImg,
-            description: 'Frontend JS Code Quiz to test your knowledge'
+            description: 'Frontend JavaScript Code Quiz to test your knowledge'
         },
         // {
         //     title: 'Happy Meals',
@@ -147,7 +147,7 @@ function Projects() {
     }
 
     return (
-        <section>
+        <section id='projects' className='w-full'>
             {/* <h2 className='text-center text-3xl font-medium mb-5'>Projects</h2> */}
             <div className='flex flex-col sidenav'>
                 <div className='tab bike-tab bg-white text-black flex flex-row' onClick={showBike}><span className='px-6'>Bike Sleuth</span><img src={bikeIcon} alt='bike' /></div>
@@ -170,7 +170,7 @@ function Projects() {
             <div className=' project-container ml-28 text-center rounded-xl w-10/12 pt-3'>
                 {/* <span className='project-intro pt-32'>Explore the tabs to view more details about each project</span> */}
             {work.map(project => (
-                <article key={project.title} className={`${project.key}`} >
+                <article key={project.title} className={`${project.key} pb-4`} >
                     <div className='flex flex-row justify-between py-3 mx-3 p-5'>
                         <h2 className='text-2xl font-medium'>{project.title}</h2>
                         <div className='flex flex-row items-center link-container'>
@@ -180,7 +180,7 @@ function Projects() {
                     </div>
                     <img src={project.snapshot} className='project-image max-h-screen p-4 rounded-xl' />
                     <span className='m-3'>{project.description}</span><br />
-                    <span className='m-3 pb-3'>Languages: {project.languages}</span>
+                    {/* <span className='m-3 pb-3'>Languages: {project.languages}</span> */}
                 </article>
             ))}
             </div>

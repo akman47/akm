@@ -24,8 +24,8 @@ function Nav(){
 
     return (
         <header className='flex justify-between'>
-        <h2>Angela Man</h2>
-        <ul id="sidepanel" className="sidepanel bg-black h-full text-xl text-center font-medium my-7">
+        <h2 className='p-6 text-3xl'>Angela Man</h2>
+        <ul id="sidepanel" className="sidepanel bg-black h-full text-3xl text-center font-bold my-7">
             <li className="mt-6 py-3" onClick={toggleMenu}>
                 <NavLink exact to='/'
                     activeClassName="text-green-300"

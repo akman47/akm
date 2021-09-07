@@ -14,6 +14,7 @@
     overflow-y: hidden;
     transition: 0.3s;
     height: 50%;
+    font-family: 'Hina Mincho', serif;
 }
 
 .bio-box:hover .bio-img,
@@ -28,4 +29,12 @@
 .developer-box:hover .developer-panel {
     color: white;
     transform: translateY(-50%);
+}
+
+.home-text {
+    font-family: 'Allison', cursive;
+}
+
+#about h2 {
+    font-family: 'Rock Salt', cursive;
 }

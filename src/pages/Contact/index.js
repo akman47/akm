@@ -5,6 +5,8 @@ import emailIcon from '../../assets/icons/email2.png';
 import resumeIcon from '../../assets/icons/resume3.png';
 import emailjs from 'emailjs-com';
 
+import '../../assets/styles/contact.css';
+
 function Contact() {
     const [formState, setFormState] = useState({name:'', email:'', message:''});
     const { name, email, message } = formState;
@@ -60,9 +62,9 @@ function Contact() {
     }
     
     return (
-        <section className="bg-black py-5 w-full flex flex-col items-center">
+        <section id='contact' className="bg-black py-5 w-full flex flex-col items-center">
             <div className='pb-8'>
-                <span className='font-medium text-2xl ml-10'>Let's Connect!</span>
+                <span className='font-medium text-2xl ml-10 contact-headers'>Let's Connect!</span>
                 <a className="text-sm flex justify-start items-center py-3 pt-6" href="tel:+12813006033">
                     <img className="contact-img mx-3" src={phoneIcon} alt="phone icon"/>
                     <span className="">281.300.6033</span>
@@ -78,7 +80,7 @@ function Contact() {
             </div>
             
             <form className="items-center flex flex-col w-full py-5" onSubmit={handleSubmit}>
-                <h4 className='font-medium text-l'>Leave a message</h4>
+                <h4 className='font-medium text-xl contact-headers'>Leave a message</h4>
                 <input type="text" name="name" placeholder="Name" className="mt-3 border-2 p-2 rounded w-1/3 text-black" defaultValue={name} onBlur={handleChange} />
                 <input type="text" name="email" placeholder="Email" className="mt-3 border-2 p-2 rounded w-1/3 text-black" defaultValue={email} onBlur={handleChange} />
                 <textarea name="message" rows="5" placeholder="Message" className="mt-3 border-2 p-2 rounded w-1/3 text-black" defaultValue={message} onBlur={handleChange} />
