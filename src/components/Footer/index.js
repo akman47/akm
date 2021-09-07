@@ -8,7 +8,7 @@ import '../../assets/styles/footer.css';
 function Footer() {
     return (
         <footer className="p-6 flex items-center w-full h-20">
-            <a href="https://linkedin.com/in/angela-man-b8533a6b/" target="_blank" rel="noreferrer" className="mx-3"><img src={linkedinLogo} alt="linked in logo" /></a>
+            <a href="https://linkedin.com/in/angela-man/" target="_blank" rel="noreferrer" className="mx-3"><img src={linkedinLogo} alt="linked in logo" /></a>
             <a href="https://github.com/akman47" target="_blank" rel="noreferrer" className="mx-3"><img src={githubLogo} alt="github logo" /></a>
             <a href="https://instagram.com/superangieman" target="_blank" rel="noreferrer" className="mx-3"><img src={instagramLogo} alt="instagram logo" /></a>
             <a href="https://facebook.com/superangieman" target="_blank" rel="noreferrer" className="mx-3"><img src={facebookLogo} alt="facebook logo" /></a>

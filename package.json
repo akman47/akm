@@ -1,7 +1,7 @@
 {
   "name": "akm",
   "version": "0.1.0",
-  "homepage": "https://akman47.github.io/akm",
+  "homepage": "http://akman47.github.io/akm",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.2.0",
