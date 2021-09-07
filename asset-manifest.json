@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/akm/static/css/main.b7b2899e.chunk.css",
+    "main.js": "/akm/static/js/main.d63febbe.chunk.js",
+    "main.js.map": "/akm/static/js/main.d63febbe.chunk.js.map",
+    "runtime-main.js": "/akm/static/js/runtime-main.7486ceb5.js",
+    "runtime-main.js.map": "/akm/static/js/runtime-main.7486ceb5.js.map",
+    "static/js/2.f6438eb8.chunk.js": "/akm/static/js/2.f6438eb8.chunk.js",
+    "static/js/2.f6438eb8.chunk.js.map": "/akm/static/js/2.f6438eb8.chunk.js.map",
+    "static/js/3.11ab76d3.chunk.js": "/akm/static/js/3.11ab76d3.chunk.js",
+    "static/js/3.11ab76d3.chunk.js.map": "/akm/static/js/3.11ab76d3.chunk.js.map",
+    "index.html": "/akm/index.html",
+    "static/css/main.b7b2899e.chunk.css.map": "/akm/static/css/main.b7b2899e.chunk.css.map",
+    "static/js/2.f6438eb8.chunk.js.LICENSE.txt": "/akm/static/js/2.f6438eb8.chunk.js.LICENSE.txt",
+    "static/media/BikeSleuth-search.188005f0.png": "/akm/static/media/BikeSleuth-search.188005f0.png",
+    "static/media/Clonello.7c5e0736.png": "/akm/static/media/Clonello.7c5e0736.png",
+    "static/media/bio.c47a0533.jpg": "/akm/static/media/bio.c47a0533.jpg",
+    "static/media/budget-tracker.c8628e92.png": "/akm/static/media/budget-tracker.c8628e92.png",
+    "static/media/code-quiz.c68d52e4.png": "/akm/static/media/code-quiz.c68d52e4.png",
+    "static/media/fb-logo.36fa8703.png": "/akm/static/media/fb-logo.36fa8703.png",
+    "static/media/fixer.2c225bae.jpg": "/akm/static/media/fixer.2c225bae.jpg",
+    "static/media/instagram-logo.7134a9e1.png": "/akm/static/media/instagram-logo.7134a9e1.png",
+    "static/media/link-white.4b361dc7.jpg": "/akm/static/media/link-white.4b361dc7.jpg",
+    "static/media/lost-mines.cdc4a0f8.jpg": "/akm/static/media/lost-mines.cdc4a0f8.jpg",
+    "static/media/resume3.f35ebd36.png": "/akm/static/media/resume3.f35ebd36.png",
+    "static/media/spain-podium.307ddb40.JPG": "/akm/static/media/spain-podium.307ddb40.JPG",
+    "static/media/tech-blog.b618c9ac.png": "/akm/static/media/tech-blog.b618c9ac.png",
+    "static/media/weather-dashboard.6412d0f7.png": "/akm/static/media/weather-dashboard.6412d0f7.png",
+    "static/media/weather-icon-color.adf65f2a.png": "/akm/static/media/weather-icon-color.adf65f2a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7486ceb5.js",
+    "static/js/2.f6438eb8.chunk.js",
+    "static/css/main.b7b2899e.chunk.css",
+    "static/js/main.d63febbe.chunk.js"
+  ]
+}
