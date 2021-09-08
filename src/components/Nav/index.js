@@ -50,7 +50,7 @@ function Nav(){
                     Projects
                 </NavLink>
             </li>
-            <li className='py-4 dropdown'>
+            <li className='py-4 dropdown' onClick={toggleMenu}>
                 <NavLink exact to='/contact'
                     activeClassName='text-green-400'
                     className='dropbtn'

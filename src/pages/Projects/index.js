@@ -14,7 +14,7 @@ import budgetIcon from '../../assets/icons/budget-icon-color.png';
 import codeIcon from '../../assets/icons/code-icon.png';
 import weatherIcon from '../../assets/icons/weather-icon-color.png';
 import taskIcon from '../../assets/icons/task-icon.png';
-import clockIcon from '../../assets/icons/clock.jpg';
+// import clockIcon from '../../assets/icons/clock.jpg';
 
 import '../../assets/styles/projects.css';
 
@@ -84,13 +84,13 @@ function Projects() {
         }
     ];
 
-    function showProject() {
-        work.map(project => (
-            // if (project.key === this.getAttribute('tab-id') {
-                document.querySelector(project.key).style.display = 'none'
-            // }        
-        ))
-    }
+    // function showProject() {
+    //     work.map(project => (
+    //         // if (project.key === this.getAttribute('tab-id') {
+    //             document.querySelector(project.key).style.display = 'none'
+    //         // }        
+    //     ))
+    // }
 
     function showBike() {
         document.querySelector('.bike').style.display = 'block';
@@ -149,7 +149,7 @@ function Projects() {
     return (
         <section id='projects' className='w-full'>
             {/* <h2 className='text-center text-3xl font-medium mb-5'>Projects</h2> */}
-            <div className='flex flex-col sidenav'>
+            <div className='flex flex-col sidenav h-full sm:mb-10'>
                 <div className='tab bike-tab bg-white text-black flex flex-row' onClick={showBike}><span className='px-6'>Bike Sleuth</span><img src={bikeIcon} alt='bike' /></div>
                 <div className='tab clonello-tab bg-white text-black flex flex-row' onClick={showClonello}><span className='px-6'>Clonello</span><img src={taskIcon} alt='task icon' /></div>
                 <div className='tab blog-tab bg-white flex text-black flex-row' onClick={showBlog}><span className='px-6'>Tech Blog</span><img src={blogIcon} alt='blog icon' /></div>
@@ -157,17 +157,17 @@ function Projects() {
                 <div className='tab weather-tab bg-white flex text-black flex-row' onClick={showWeather}><span className='px-6'>Weather Dashboard</span><img src={weatherIcon} alt='weather' /></div>
                 <div className='tab budget-tab bg-white flex text-black flex-row' onClick={showBudget}><span className='px-6'>Budget Tracker</span><img src={budgetIcon} alt='budget' /></div>
             </div>
-            <div className='sidenav flex flex-col'>
+            {/* <div className='sidenav flex flex-col h-full'>
                 <div className='right-tab a-tab bg-white text-black flex flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
                 <div className='right-tab b-tab bg-white text-black flex flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
                 <div className='right-tab c-tab bg-white flex text-black flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
                 <div className='right-tab d-tab bg-white flex text-black flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
                 <div className='right-tab e-tab bg-white flex text-black flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
                 <div className='right-tab f-tab bg-white flex text-black flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
-            </div>
+            </div> */}
             
 
-            <div className=' project-container ml-28 text-center rounded-xl w-10/12 pt-3'>
+            <div className=' project-container ml-14 mt-14 md:ml-28 text-center rounded-xl w-10/12 pt-3'>
                 {/* <span className='project-intro pt-32'>Explore the tabs to view more details about each project</span> */}
             {work.map(project => (
                 <article key={project.title} className={`${project.key} pb-4`} >
@@ -178,7 +178,7 @@ function Projects() {
                             <a href={project.repoLink} target='_blank' rel='noreferrer' className='px-2'><img src={githubIcon} alt='' /></a>
                         </div>
                     </div>
-                    <img src={project.snapshot} className='project-image max-h-screen p-4 rounded-xl' />
+                    <img src={project.snapshot} className='project-image max-h-screen p-4 rounded-xl' alt={`snapshot of ${project.title} application`} />
                     <span className='m-3'>{project.description}</span><br />
                     {/* <span className='m-3 pb-3'>Languages: {project.languages}</span> */}
                 </article>
