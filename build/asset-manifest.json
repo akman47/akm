@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/akm/static/css/main.b7b2899e.chunk.css",
-    "main.js": "/akm/static/js/main.1ea94c27.chunk.js",
-    "main.js.map": "/akm/static/js/main.1ea94c27.chunk.js.map",
-    "runtime-main.js": "/akm/static/js/runtime-main.7486ceb5.js",
-    "runtime-main.js.map": "/akm/static/js/runtime-main.7486ceb5.js.map",
-    "static/js/2.f6438eb8.chunk.js": "/akm/static/js/2.f6438eb8.chunk.js",
-    "static/js/2.f6438eb8.chunk.js.map": "/akm/static/js/2.f6438eb8.chunk.js.map",
-    "static/js/3.11ab76d3.chunk.js": "/akm/static/js/3.11ab76d3.chunk.js",
-    "static/js/3.11ab76d3.chunk.js.map": "/akm/static/js/3.11ab76d3.chunk.js.map",
+    "main.css": "/akm/static/css/main.b8136d06.chunk.css",
+    "main.js": "/akm/static/js/main.d59f3cac.chunk.js",
+    "main.js.map": "/akm/static/js/main.d59f3cac.chunk.js.map",
+    "runtime-main.js": "/akm/static/js/runtime-main.42fa4759.js",
+    "runtime-main.js.map": "/akm/static/js/runtime-main.42fa4759.js.map",
+    "static/js/2.e235cd5e.chunk.js": "/akm/static/js/2.e235cd5e.chunk.js",
+    "static/js/2.e235cd5e.chunk.js.map": "/akm/static/js/2.e235cd5e.chunk.js.map",
+    "static/js/3.9dac5b1b.chunk.js": "/akm/static/js/3.9dac5b1b.chunk.js",
+    "static/js/3.9dac5b1b.chunk.js.map": "/akm/static/js/3.9dac5b1b.chunk.js.map",
     "index.html": "/akm/index.html",
-    "static/css/main.b7b2899e.chunk.css.map": "/akm/static/css/main.b7b2899e.chunk.css.map",
-    "static/js/2.f6438eb8.chunk.js.LICENSE.txt": "/akm/static/js/2.f6438eb8.chunk.js.LICENSE.txt",
+    "static/css/main.b8136d06.chunk.css.map": "/akm/static/css/main.b8136d06.chunk.css.map",
+    "static/js/2.e235cd5e.chunk.js.LICENSE.txt": "/akm/static/js/2.e235cd5e.chunk.js.LICENSE.txt",
     "static/media/BikeSleuth-search.188005f0.png": "/akm/static/media/BikeSleuth-search.188005f0.png",
     "static/media/Clonello.7c5e0736.png": "/akm/static/media/Clonello.7c5e0736.png",
     "static/media/bio.c47a0533.jpg": "/akm/static/media/bio.c47a0533.jpg",
@@ -29,9 +29,9 @@
     "static/media/weather-icon-color.adf65f2a.png": "/akm/static/media/weather-icon-color.adf65f2a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7486ceb5.js",
-    "static/js/2.f6438eb8.chunk.js",
-    "static/css/main.b7b2899e.chunk.css",
-    "static/js/main.1ea94c27.chunk.js"
+    "static/js/runtime-main.42fa4759.js",
+    "static/js/2.e235cd5e.chunk.js",
+    "static/css/main.b8136d06.chunk.css",
+    "static/js/main.d59f3cac.chunk.js"
   ]
 }

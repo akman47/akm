@@ -150,12 +150,12 @@ function Projects() {
         <section id='projects' className='w-full'>
             {/* <h2 className='text-center text-3xl font-medium mb-5'>Projects</h2> */}
             <div className='flex flex-col sidenav h-full sm:mb-10'>
-                <div className='tab bike-tab bg-white text-black flex flex-row' onClick={showBike}><span className='px-6'>Bike Sleuth</span><img src={bikeIcon} alt='bike' /></div>
-                <div className='tab clonello-tab bg-white text-black flex flex-row' onClick={showClonello}><span className='px-6'>Clonello</span><img src={taskIcon} alt='task icon' /></div>
-                <div className='tab blog-tab bg-white flex text-black flex-row' onClick={showBlog}><span className='px-6'>Tech Blog</span><img src={blogIcon} alt='blog icon' /></div>
-                <div className='tab quiz-tab bg-white flex text-black flex-row' onClick={showQuiz}><span className='px-6'>Code Quiz</span><img src={codeIcon} alt='coding quiz' /></div>
-                <div className='tab weather-tab bg-white flex text-black flex-row' onClick={showWeather}><span className='px-6'>Weather Dashboard</span><img src={weatherIcon} alt='weather' /></div>
-                <div className='tab budget-tab bg-white flex text-black flex-row' onClick={showBudget}><span className='px-6'>Budget Tracker</span><img src={budgetIcon} alt='budget' /></div>
+                <div className='tab bike-tab bg-white text-black flex flex-row' onClick={showBike}><span className='px-6'>Bike Sleuth</span><img src={bikeIcon} className='w-8 h-8 sm:w-10 sm:h-10' alt='bike' /></div>
+                <div className='tab clonello-tab bg-white text-black flex flex-row' onClick={showClonello}><span className='px-6'>Clonello</span><img src={taskIcon} className='w-8 h-8 sm:w-10 sm:h-10' alt='task icon' /></div>
+                <div className='tab blog-tab bg-white flex text-black flex-row' onClick={showBlog}><span className='px-6'>Tech Blog</span><img src={blogIcon} className='w-8 h-8 sm:w-10 sm:h-10' alt='blog icon' /></div>
+                <div className='tab quiz-tab bg-white flex text-black flex-row' onClick={showQuiz}><span className='px-6'>Code Quiz</span><img src={codeIcon} className='w-8 h-8 sm:w-10 sm:h-10' alt='coding quiz' /></div>
+                <div className='tab weather-tab bg-white flex text-black flex-row' onClick={showWeather}><span className='px-6'>Weather Dashboard</span><img src={weatherIcon} className='w-8 h-8 sm:w-10 sm:h-10' alt='weather' /></div>
+                <div className='tab budget-tab bg-white flex text-black flex-row' onClick={showBudget}><span className='px-6'>Budget Tracker</span><img src={budgetIcon} className='w-8 h-8 sm:w-10 sm:h-10' alt='budget' /></div>
             </div>
             {/* <div className='sidenav flex flex-col h-full'>
                 <div className='right-tab a-tab bg-white text-black flex flex-row'><img src={clockIcon} alt='bike' /><span className='px-6'>Coming Soon!</span></div>
@@ -167,15 +167,15 @@ function Projects() {
             </div> */}
             
 
-            <div className=' project-container ml-14 mt-14 md:ml-28 text-center rounded-xl w-10/12 pt-3'>
+            <div className=' project-container ml-14 mt-14 md:ml-28 md:mt-3 text-center rounded-xl w-4/5 h-3/6 pt-3'>
                 {/* <span className='project-intro pt-32'>Explore the tabs to view more details about each project</span> */}
             {work.map(project => (
                 <article key={project.title} className={`${project.key} pb-4`} >
                     <div className='flex flex-row justify-between py-3 mx-3 p-5'>
                         <h2 className='text-2xl font-medium'>{project.title}</h2>
                         <div className='flex flex-row items-center link-container'>
-                            <a href={project.appLink} target='_blank' rel='noreferrer' className='px-2 '><img src={linkIcon} alt='' /></a>
-                            <a href={project.repoLink} target='_blank' rel='noreferrer' className='px-2'><img src={githubIcon} alt='' /></a>
+                            <a href={project.appLink} target='_blank' rel='noreferrer' className='px-2 '><img src={linkIcon} className='w-10 h-7 sm:w-12 sm:h-10' alt='' /></a>
+                            <a href={project.repoLink} target='_blank' rel='noreferrer' className='px-2'><img src={githubIcon} className='w-10 h-7 sm:w-12 sm:h-10' alt='' /></a>
                         </div>
                     </div>
                     <img src={project.snapshot} className='project-image max-h-screen p-4 rounded-xl' alt={`snapshot of ${project.title} application`} />

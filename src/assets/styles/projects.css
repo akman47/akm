@@ -2,11 +2,6 @@ body {
     overflow-x: hidden;
 }
 
-.sidenav img {
-    width: 34px;
-    height: 34px;
-}
-
 .tab {
     position: absolute;
     left: -100px;
@@ -41,8 +36,8 @@ body {
 
 .project-container {
     /* display: none; */
-    width: 80%;
-    height: 55%;
+    /* width: 80%; */
+    /* height: 55%; */
     border: 2px solid #f1f1f1;
     line-height: 1.5;
 }
@@ -88,7 +83,6 @@ body {
 
 .b-tab {
     top: 200px;
-
 }
 
 .c-tab {
@@ -105,11 +99,6 @@ body {
 
 .f-tab {
     top: 480px;
-}
-
-.link-container img {
-    width: 32px;
-    height: 32px;
 }
 
 .project-image {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import homeImage from '../../assets/images/lost-mines.jpg';
 import Typist from 'react-typist';
 
